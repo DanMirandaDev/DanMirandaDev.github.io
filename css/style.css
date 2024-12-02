@@ -1,0 +1,337 @@
+/* Estilo General */
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+body{
+    color: #cec8c8;
+    text-align: center;
+    font-family: "Amaranth", sans-serif;
+    background-color: rgb(44, 44, 44);
+
+}
+
+
+
+
+/* Estilos de barra de navegacion */
+.navbar {
+    background-color: #0c0c0cea; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1090px;
+    padding-left: 25px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 36px;
+    font-family:"Bebas Neue", sans-serif;
+    color: rgb(216, 216, 216);
+    transition: 1s color;
+    font-size: 23px;
+}
+
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.829);
+    text-shadow: 1px 12px 2px rgba(107, 105, 103, 0.377);
+    border-top-style: outset;
+}
+
+/* Logo de pagina */
+#logo{
+    display: flex;
+    
+}
+
+
+    .about {
+        padding: 5em;
+        
+    }
+
+    .service{
+        padding: 5em;
+    }
+
+    .contact {
+        padding: 5em;
+    }
+
+.banner img{
+    width: 1920px;
+    height: 600px;
+    opacity: 85%;
+    box-shadow: 1px 1px 9px 1px rgba(255, 255, 255, 0.452);
+    image-rendering: auto;
+    
+
+}
+
+p{
+    font-family: "Odibee Sans", sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+
+}
+
+#seccion_about{
+    border-bottom: 1px solid black;
+}
+
+.links_nav{
+    display: flex;
+    
+}
+
+/* Estilos iniciales (fuera de la vista) */
+.container {
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateX(-100px); /* Desplazado hacia la izquierda */
+    transition: opacity 1s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Estilo al activarse (en el centro) */
+  .container.active {
+    opacity: 1; /* Totalmente visible */
+    transform: translateX(0); /* Sin desplazamiento, en el centro */
+  }
+  
+  .container img{
+    width: 700px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 9px 1px rgba(255, 255, 255, 0.452);
+    
+  }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Sección del servicio */
+  .service {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .service h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Galería vertical */
+  .vertical-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .container {
+    width: calc(33.33% - 20px); /* Ajusta el tamaño de los contenedores */
+    background-color: #fff;
+ 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .text_img {
+    padding: 15px;
+    font-size: 35px;
+    color: #555;
+    text-align: center;
+  }
+  
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-container > div {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-about, .footer-links, .footer-contact {
+    text-align: left;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  /* Estilos de la sección de contacto */
+.contact-section {
+    background: linear-gradient(135deg, #2804f580, #aaf300);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4c84ff;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background: #026dfa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background: #3b6acb;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 10px;
+    }
+  }
+  
+  /* Contenedor de imágenes */
+  
+  .container img {
+    display: block;
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza la transición */
+  }
+  
+  .container:hover img {
+    transform: scale(1.1); /* Amplía la imagen al pasar el mouse */
+    filter: brightness(1.2); /* Aumenta el brillo para un efecto más llamativo */
+  }
+  
+  .text_img {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+  }
+  
