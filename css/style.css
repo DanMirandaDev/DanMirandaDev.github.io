@@ -1,0 +1,58 @@
+/* Fondo de Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen dentro del Lightbox */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* Transición suave al abrir */
+.lightbox, .lightbox-img {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Imagen interactiva */
+.img-clickable {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-clickable:hover {
+    transform: scale(1.1);
+}
+
+/* Inicialmente oculto y desplazado hacia abajo */
+.img-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 3s ease;
+}
+
+/* Cuando la imagen entra en la vista */
+.img-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card{
+    font-family: "Amaranth", serif;
+}
+
+h1{
+    color: chocolate;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
